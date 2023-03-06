@@ -1,0 +1,7 @@
+.content {
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+}
+.content:hover {
+  color: blue;
+}
