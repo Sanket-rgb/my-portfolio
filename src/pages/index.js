@@ -7,6 +7,7 @@ import classes from "../styles/Home.module.css"
 import WorkInfo from "@/components/Work/WorkInfo"
 import HobbiesInfo from "@/components/Hobbies/HobbiesInfo"
 import AboutInfo from "@/components/About/AboutInfo"
+import SocialMediaLinks from "@/components/Footer/SocialMediaLinks"
 
 export default function Home() {
   const [selectedNav, setSelectedNav] = useState("ABOUT")
@@ -31,6 +32,7 @@ export default function Home() {
       {selectedNav === "WORK" && <WorkInfo />}
       {selectedNav === "HOBBIES" && <HobbiesInfo />}
       {selectedNav === "ABOUT" && <AboutInfo />}
+      <SocialMediaLinks tabType={selectedNav} />
     </React.Fragment>
   )
 }
