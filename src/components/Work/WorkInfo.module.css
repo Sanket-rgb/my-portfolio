@@ -9,6 +9,11 @@
   text-align: center;
 }
 
+.heading-title > h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
 .card-container {
   padding: 1rem;
 }
