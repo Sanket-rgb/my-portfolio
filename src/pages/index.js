@@ -21,11 +21,11 @@ export default function Home() {
 
   return (
     <React.Fragment>
-      <div className={classes["nav-bar"]}>
+      <header className={classes["nav-bar"]}>
         <Work selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
         <Hobbies selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
         <About selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
-      </div>
+      </header>
       {selectedNav === "WORK" && <WorkInfo />}
       {selectedNav === "HOBBIES" && <HobbiesInfo />}
       {selectedNav === "ABOUT" && <AboutInfo />}
