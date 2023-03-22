@@ -40,7 +40,7 @@ const AboutInfo = (props) => {
         <h1>Skills</h1>
 
         <ul>
-          <li>Web/Mobile Technology: HTML, CSS, ReactJS, Flutter</li>
+          <li>Tech Stack: HTML5, CSS3, Next.js, Flutter, GitHub, Netlify</li>
         </ul>
         <ul>
           <li>Programming languages: Python, JavaScript, C</li>

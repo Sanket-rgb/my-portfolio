@@ -30,6 +30,7 @@
 
 .image {
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .info-details {
@@ -40,14 +41,14 @@
   margin: 0rem 2rem;
 }
 
-.info-details > h1 {
+.info-details h1 {
   font-size: 21px;
   font-weight: lighter;
   margin: 0;
   margin-bottom: 1rem;
 }
 
-.info-details > p {
+.info-details p {
   margin-top: 0;
   font-size: 16px;
   /* color: rgba(0, 0, 0, 0.481); */
@@ -67,16 +68,24 @@
 @media (max-width: 800px) {
   .grid-container {
     grid-template-columns: 1fr;
+    padding: 1rem 1rem;
   }
 
   .image-container {
     width: 70%;
     height: 100%;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     place-self: center;
   }
 
   .info-details {
-    width: 90%;
+    /* display: flex; */
+    width: 100%;
+    padding: 0rem 2rem 0rem 0rem;
+  }
+
+  .info-details h1:first-child {
+    text-align: center;
   }
 }
