@@ -1,10 +1,11 @@
-import React from "react"
+import Link from "next/link";
+import React from "react";
 
-import classes from "./SocialMediaLinks.module.css"
+import classes from "./SocialMediaLinks.module.css";
 const SocialMediaLinks = (props) => {
   return (
     <div className={classes.wrapper}>
-      {props.tabType === "ABOUT" ? null : (
+      {props.tabType === "WORK" && (
         <>
           <a href="https://linkedin.com/in/sanketkoli007" target="_blank">
             <svg
@@ -49,6 +50,10 @@ const SocialMediaLinks = (props) => {
               </g>
             </svg>
           </a>
+        </>
+      )}
+      {props.tabType === "HOBBIES" && (
+        <>
           <a href="https://instagram.com/estclicks" target="_blank">
             <svg
               viewBox="-2.4 -2.4 28.80 28.80"
@@ -73,7 +78,7 @@ const SocialMediaLinks = (props) => {
         </>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default SocialMediaLinks
+export default SocialMediaLinks;

@@ -50,6 +50,7 @@
 .info-details > p {
   margin-top: 0;
   font-size: 16px;
+  /* color: rgba(0, 0, 0, 0.481); */
 }
 
 .info-details > ul {
@@ -73,5 +74,9 @@
     height: 100%;
     margin-bottom: 3rem;
     place-self: center;
+  }
+
+  .info-details {
+    width: 90%;
   }
 }
