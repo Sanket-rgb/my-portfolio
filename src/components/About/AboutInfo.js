@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import Image from "next/image"
-import myself from "../../../public/Images/Photographs/Myself.jpeg"
-import classes from "./AboutInfo.module.css"
+import Image from "next/image";
+import myself from "../../../public/Images/Photographs/Myself.jpeg";
+import classes from "./AboutInfo.module.css";
 const AboutInfo = (props) => {
   return (
     <div className={classes["grid-container"]}>
@@ -19,11 +19,15 @@ const AboutInfo = (props) => {
         />
       </div>
       <div className={classes["info-details"]}>
-        <h1>Sanket Koli | Software Engineer, Photographer</h1>
-        <p>
+        <h1>Front-End Developer</h1>
+        <p className={classes.about}>
+          Hi, I{"'"}m Sanket Koli. A passionate Front-end developer based in
+          Edmonds, WA. 📍
+        </p>
+        {/* <p>
           Experienced Frontend Developer with 2 Years of Expertise in Building
           User-Friendly Web/Mobile Interfaces.
-        </p>
+        </p> */}
         <p>
           I possess a proven track record of spearheading front-end development
           initiatives at a thriving startup, driving organizational growth and
@@ -101,7 +105,7 @@ const AboutInfo = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutInfo
+export default AboutInfo;

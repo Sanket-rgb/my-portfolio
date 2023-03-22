@@ -1,11 +1,12 @@
-import React from "react"
+import React from "react";
 
-import classes from "./WorkInfo.module.css"
-import Collab from "../../../public/Images/Work/Collab.jpg"
-import Frshr from "../../../public/Images/Work/Frshr.jpg"
-import PdP from "../../../public/Images/Work/PdP.jpeg"
-import Quote from "../../../public/Images/Work/QuoteGallery.jpeg"
-import Image from "next/image"
+import classes from "./WorkInfo.module.css";
+import Collab from "../../../public/Images/Work/Collab.jpg";
+import Frshr from "../../../public/Images/Work/Frshr.jpg";
+import PdP from "../../../public/Images/Work/PdP.jpeg";
+import Quote from "../../../public/Images/Work/QuoteGallery.jpeg";
+import Image from "next/image";
+import Link from "next/link";
 const WorkInfo = (props) => {
   return (
     <div className={classes["grid-container"]}>
@@ -62,14 +63,18 @@ const WorkInfo = (props) => {
       </div>
       <div className={classes["card-container"]}>
         <div className={classes["card-inner-container"]}>
-          <div className={classes["image-container"]}>
+          <Link
+            target="_blank"
+            href="https://radar-web-client-git-delete-station-popup-teamsearchanddestroy.vercel.app"
+            className={classes["image-container"]}
+          >
             <Image
               className={classes.image}
               src={PdP}
               alt="company-name"
               fill
             />
-          </div>
+          </Link>
           <div className={classes["card-description"]}>
             <h2>Drone Detection System (Present)</h2>
             <p>
@@ -100,7 +105,7 @@ const WorkInfo = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WorkInfo
+export default WorkInfo;
