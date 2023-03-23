@@ -33,8 +33,9 @@ export default function Home() {
           <Hobbies selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
           <About selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
         </div>
-        <div className={classes["menu-bar"]} onClick={menuListHandler}>
+        <div className={classes["menu-bar"]}>
           <Image
+            onClick={menuListHandler}
             className={classes.image}
             alt="menu-burger"
             src="https://cdn.shopify.com/s/files/1/0516/4082/8070/t/2/assets/burger.svg"
