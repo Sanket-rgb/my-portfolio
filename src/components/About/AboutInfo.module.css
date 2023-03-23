@@ -110,7 +110,7 @@
   gap: 0.5rem;
 }
 
-.social-media-container div {
+.social-media-container a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,10 +121,19 @@
   background: black;
 }
 
-.social-media-container div:first-child {
+/* .social-media-container div a {
+  padding: 0;
+  margin-bottom: 0;
+} */
+
+.social-media-container a:first-child {
   border-radius: 4px;
 }
 
+.social-media-container a:hover {
+  cursor: pointer;
+  background-color: rgb(80, 80, 253);
+}
 /* .social-media-links-wrapper {
   display: flex;
   gap: 0.5rem;
