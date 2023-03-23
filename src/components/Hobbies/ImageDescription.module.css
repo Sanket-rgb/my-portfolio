@@ -1,21 +1,18 @@
 .imageDescriptionContainer {
   background: rgb(25, 24, 24);
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: white;
   cursor: pointer;
 }
 
-.imageDescriptionContainer > p {
-  margin: 0.8rem;
-  font-size: medium;
-}
-
-.imageDescriptionContainer > p:first-child {
-  font-size: small;
+.imageDescriptionContainer p {
+  font-size: 1.7vw;
 }
 
 .dash-line {
