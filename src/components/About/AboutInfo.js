@@ -3,7 +3,8 @@ import React from "react";
 import Image from "next/image";
 import myself from "../../../public/Images/Photographs/Myself.jpeg";
 import classes from "./AboutInfo.module.css";
-import linkedin from "../../../public/Images/Work/linkedin.png";
+import linkedin from "../../../public/Images/Work/linkedin.svg";
+import github from "../../../public/Images/Work/github.svg";
 import html from "../../../public/Images/logos/html.svg";
 import css from "../../../public/Images/logos/css.svg";
 import js from "../../../public/Images/logos/js.svg";
@@ -12,6 +13,7 @@ import flutter from "../../../public/Images/logos/flutter.svg";
 import next from "../../../public/Images/logos/Next.svg";
 
 import style from "../Footer/SocialMediaLinks.module.css";
+import Link from "next/link";
 const AboutInfo = (props) => {
   return (
     <div className={classes.container}>
@@ -24,22 +26,18 @@ const AboutInfo = (props) => {
             Edmonds, WA. 📍
           </p>
           <div className={classes["social-media-container"]}>
-            <div>
-              <Image
-                height={25}
-                width={25}
-                alt="linkedin"
-                src={linkedin}
-              ></Image>
-            </div>
-            <div>
+            <a href="https://linkedin.com/in/sanketkoli007" target="_blank">
               <Image
                 height={20}
                 width={20}
                 alt="linkedin"
                 src={linkedin}
               ></Image>
-            </div>
+            </a>
+
+            <a href="https://github.com/Sanket-rgb" target="_blank">
+              <Image height={20} width={20} alt="github" src={github}></Image>
+            </a>
           </div>
         </div>
         <div className={classes["image-container"]}>
