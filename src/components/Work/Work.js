@@ -3,12 +3,13 @@ import React from "react";
 import classes from "../Navigation.module.css";
 const Work = (props) => {
   // const activeItem = props.selectedNav === "WORK" ? classes.selected : ""
+  const className = props.selectedNav === "WORK" ? classes["mobile-menu"] : "";
 
   const changeNavSelector = () => {
     props.onSelectNav("WORK");
   };
   return (
-    <div className={classes["nav-item-wrapper"]}>
+    <div className={`${className} ${classes["nav-item-wrapper"]} `}>
       <div className={`${classes.content} `} onClick={changeNavSelector}>
         WORK
       </div>

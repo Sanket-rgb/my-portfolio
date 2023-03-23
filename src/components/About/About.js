@@ -1,14 +1,14 @@
-import React from "react"
+import React from "react";
 
-import classes from "../Navigation.module.css"
+import classes from "../Navigation.module.css";
 const About = (props) => {
-  // const activeItem = props.selectedNav === "ABOUT" ? classes.selected : ""
+  const className = props.selectedNav === "ABOUT" ? classes["mobile-menu"] : "";
 
   const changeNavSelector = () => {
-    props.onSelectNav("ABOUT")
-  }
+    props.onSelectNav("ABOUT");
+  };
   return (
-    <div className={classes["nav-item-wrapper"]}>
+    <div className={`${className} ${classes["nav-item-wrapper"]} `}>
       <div className={`${classes.content}`} onClick={changeNavSelector}>
         ABOUT
       </div>
@@ -16,7 +16,7 @@ const About = (props) => {
         <div className={classes["dash-line"]}></div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

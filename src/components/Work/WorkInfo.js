@@ -78,7 +78,7 @@ const WorkInfo = (props) => {
             />
           </Link>
           <div className={classes["card-description"]}>
-            <h2>estclicks</h2>
+            <h2>Shop-estclicks</h2>
             <p>
               Designed and developed an e-commerce shop for selling digital
               photographs.
