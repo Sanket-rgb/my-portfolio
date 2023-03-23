@@ -9,7 +9,7 @@ import css from "../../../public/Images/logos/css.svg";
 import js from "../../../public/Images/logos/js.svg";
 import react from "../../../public/Images/logos/react.svg";
 import flutter from "../../../public/Images/logos/flutter.svg";
-import next from "../../../public/Images/logos/next.svg";
+import next from "../../../public/Images/logos/Next.svg";
 
 import style from "../Footer/SocialMediaLinks.module.css";
 const AboutInfo = (props) => {
