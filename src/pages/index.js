@@ -1,35 +1,72 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
-import About from "@/components/About/About"
-import Hobbies from "@/components/Hobbies/Hobbies"
-import Work from "@/components/Work/Work"
+import About from "@/components/About/About";
+import Hobbies from "@/components/Hobbies/Hobbies";
+import Work from "@/components/Work/Work";
 
-import WorkInfo from "@/components/Work/WorkInfo"
-import HobbiesInfo from "@/components/Hobbies/HobbiesInfo"
-import AboutInfo from "@/components/About/AboutInfo"
+import WorkInfo from "@/components/Work/WorkInfo";
+import HobbiesInfo from "@/components/Hobbies/HobbiesInfo";
+import AboutInfo from "@/components/About/AboutInfo";
 
-import SocialMediaLinks from "@/components/Footer/SocialMediaLinks"
+import SocialMediaLinks from "@/components/Footer/SocialMediaLinks";
 
-import classes from "../components/Navigation.module.css"
+import classes from "../components/Navigation.module.css";
+import Image from "next/image";
 
 export default function Home() {
-  const [selectedNav, setSelectedNav] = useState("ABOUT")
+  const [selectedNav, setSelectedNav] = useState("ABOUT");
+  const [menuList, setMenuList] = useState(false);
 
   const navSelectorhandler = (selectedNav) => {
-    setSelectedNav(selectedNav)
-  }
+    setSelectedNav(selectedNav);
+  };
+
+  const menuListHandler = () => {
+    setMenuList(!menuList);
+  };
 
   return (
     <React.Fragment>
       <header className={classes["nav-bar"]}>
-        <Work selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
-        <Hobbies selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
-        <About selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
+        <div className={classes["nav-bar-items"]}>
+          <Work selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
+          <Hobbies selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
+          <About selectedNav={selectedNav} onSelectNav={navSelectorhandler} />
+        </div>
+        <div className={classes["menu-bar"]} onClick={menuListHandler}>
+          <Image
+            className={classes.image}
+            alt="menu-burger"
+            src="https://cdn.shopify.com/s/files/1/0516/4082/8070/t/2/assets/burger.svg"
+            width={30}
+            height={17}
+          ></Image>
+        </div>
       </header>
+      {menuList && (
+        <div className={classes["mobile-menu-items"]}>
+          <Work
+            className={classes["mobile-menu"]}
+            selectedNav={selectedNav}
+            onSelectNav={navSelectorhandler}
+          />
+          <Hobbies
+            className={classes["mobile-menu"]}
+            selectedNav={selectedNav}
+            onSelectNav={navSelectorhandler}
+          />
+          <About
+            className={classes["mobile-menu"]}
+            selectedNav={selectedNav}
+            onSelectNav={navSelectorhandler}
+          />
+        </div>
+      )}
+
       {selectedNav === "WORK" && <WorkInfo />}
       {selectedNav === "HOBBIES" && <HobbiesInfo />}
       {selectedNav === "ABOUT" && <AboutInfo />}
       <SocialMediaLinks tabType={selectedNav} />
     </React.Fragment>
-  )
+  );
 }

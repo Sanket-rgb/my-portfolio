@@ -1,6 +1,5 @@
-.nav-bar {
+.nav-bar-items {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   padding: 2rem 4rem;
   width: auto;
@@ -15,12 +14,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .content {
   font-size: medium;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  letter-spacing: 2px;
   color: rgba(0, 0, 0, 0.705);
+  height: 5vh;
 }
 
 .dash-line {
@@ -31,8 +35,56 @@
   text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-  .nav-bar {
+.menu-bar {
+  display: none;
+  justify-content: flex-end;
+  position: relative;
+  right: 10px;
+
+  padding: 2rem 1rem;
+  width: auto;
+  background: white;
+}
+
+.mobile-menu-items {
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-bar-items {
+    display: none;
     justify-content: space-between;
+  }
+
+  .menu-bar {
+    display: flex;
+    /* width: 100%; */
+    /* right: 20px; */
+  }
+
+  .menu-bar > .image:hover {
+    cursor: pointer;
+  }
+
+  .mobile-menu,
+  .mobile-menu > .content {
+    background: black;
+    color: white;
+    height: 5vh;
+  }
+
+  .dash-line {
+    height: 0px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.387);
+    width: 0%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mobile-menu-items {
+    display: none;
   }
 }
