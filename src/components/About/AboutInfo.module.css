@@ -1,11 +1,11 @@
 .container {
-  /* height: 90vh; */
+  /* height: 85vh; */
   margin: 0rem 6rem;
   /* background: red; */
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .about-me {

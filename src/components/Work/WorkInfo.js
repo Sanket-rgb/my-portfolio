@@ -6,6 +6,7 @@ import Frshr from "../../../public/Images/Work/Frshr.jpg";
 import PdP from "../../../public/Images/Work/PdP.jpeg";
 import ToMoTo from "../../../public/Images/Work/ToMoTo.jpeg";
 import estclicks from "../../../public/Images/Work/estclicksshop.jpeg";
+import carrental from "../../../public/Images/Work/car-rental.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 const WorkInfo = (props) => {
@@ -82,6 +83,31 @@ const WorkInfo = (props) => {
             <p>
               Designed and developed an e-commerce shop for selling digital
               photographs.
+            </p>
+            {/* https://quotegallery-5bce8.web.app/ */}
+          </div>
+        </div>
+      </div>
+      <div className={classes["card-container"]}>
+        <div className={classes["card-inner-container"]}>
+          <Link
+            target="_blank"
+            href="https://sk-car-rental.netlify.app/"
+            className={classes["image-container"]}
+          >
+            <Image
+              className={classes.image}
+              src={carrental}
+              alt="company-name"
+              fill
+            />
+          </Link>
+          <div className={classes["card-description"]}>
+            <h2>Car-Rental</h2>
+            <p>
+              Developed an intuitive car rental application that highlights an
+              extensive selection of cars, along with their pickup points and
+              rental dates, empowering users to make informed decisions.
             </p>
             {/* https://quotegallery-5bce8.web.app/ */}
           </div>
