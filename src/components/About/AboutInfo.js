@@ -11,6 +11,7 @@ import js from "../../../public/Images/logos/js.svg"
 import react from "../../../public/Images/logos/react.svg"
 import flutter from "../../../public/Images/logos/flutter.svg"
 import next from "../../../public/Images/logos/Next.svg"
+import scss from "../../../public/Images/logos/scss.svg"
 
 import style from "../Footer/SocialMediaLinks.module.css"
 import Link from "next/link"
@@ -20,7 +21,7 @@ const AboutInfo = (props) => {
       <div className={classes.container}>
         <div className={classes["about-me"]}>
           <div className={classes.description}>
-            <h1>Front-end Mobile and Web developer</h1>
+            <h1>Front-end Software Developer</h1>
             <p>
               Hi, I{"'"}m Sanket Koli. A passionate Front-end developer based in
               Edmonds, WA. 📍
@@ -67,6 +68,9 @@ const AboutInfo = (props) => {
               </li>
               <li>
                 <Image src={next} alt="next" height={34} width={34}></Image>
+              </li>
+              <li>
+                <Image src={scss} alt="scss" height={34} width={34}></Image>
               </li>
               <li>
                 <Image
