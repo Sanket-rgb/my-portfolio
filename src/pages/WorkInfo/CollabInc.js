@@ -1,10 +1,11 @@
+import Link from "next/link"
 import classes from "./WorkInfo.module.css"
 const CollabInc = () => {
   return (
     <main className={classes["page-content"]}>
       <div className={classes["container"]}>
         <header className={classes["header"]}>
-          <h2>Sanket Koli</h2>
+          <Link href="/">Sanket Koli</Link>
           <h1>Collab</h1>
           <p>(May 2021 - Aug 2021) • Engineering Intern • Internship</p>
         </header>

@@ -21,7 +21,17 @@ const AboutInfo = (props) => {
       <div className={classes.container}>
         <div className={classes["about-me"]}>
           <div className={classes.description}>
-            <h1>Front-end Software Developer</h1>
+            <h1>
+              Front-End Software Developer{" "}
+              <span>
+                <Image
+                  height={50}
+                  width={50}
+                  alt="waving-hand"
+                  src="/Images/logos/wave.png"
+                ></Image>
+              </span>
+            </h1>
             <p>
               Hi, I{"'"}m Sanket Koli. A passionate Front-end developer based in
               Edmonds, WA. 📍
