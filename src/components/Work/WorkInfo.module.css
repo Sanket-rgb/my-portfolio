@@ -1,22 +1,35 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px 0px;
+
+  background-color: #f8f9fa;
+}
 .grid-container {
   display: grid;
+  max-width: 70rem;
   grid-template-columns: 1fr 1fr;
   padding: 0rem 1rem;
 }
 
 .heading-title {
   grid-column: 1 / 3;
-  text-align: center;
-
-  letter-spacing: 2px;
+  text-align: start;
 }
 
 .heading-title > h2 {
   margin: 0;
   margin-bottom: 1rem;
+
+  font-size: 25px;
+
+  letter-spacing: 2px;
 }
 .heading-title > h2:last-child {
-  margin-top: 1rem;
+  margin: 1rem 1rem;
 }
 
 .card-container {
@@ -26,25 +39,31 @@
 .card-inner-container {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+
   border-radius: 0.25em;
   box-shadow: rgb(0 0 0 / 6%) 0px 4px 6px;
   transition: all 0.3s ease-in-out;
+
+  text-decoration: none;
+  color: black;
+
   height: 100%;
 }
 
 .card-inner-container:hover {
-  transform: translate3d(0px, -10px, 0px);
+  /* transform: translate3d(0px, -10px, 0px); */
+  transform: scale(1.05);
   box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
 }
 
 .image-container {
   aspect-ratio: 16/9;
   position: relative;
-  cursor: pointer;
 }
 
 .image {
-  object-fit: contain;
+  object-fit: fill;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
@@ -53,11 +72,56 @@
   padding: 0rem 1rem;
 }
 
-.card-description h4 {
-  margin: 0;
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title h2 {
+  font-size: 20px;
+}
+.links-container {
+  display: flex;
+  gap: 1rem;
 }
 
-@media screen and (max-width: 800px) {
+.link {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: #2d2e32;
+
+  /* font-size: 20px; */
+}
+.link:hover {
+  color: #147efb;
+  transition: all 0.3s;
+}
+
+.skills {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  padding: 0.7rem 1rem;
+
+  background-color: rgba(0, 0, 0, 0.035);
+  border-color: #f8f9fa;
+  border-radius: 0.25rem;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.skill-name:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
   .grid-container {
     grid-template-columns: 1fr;
   }

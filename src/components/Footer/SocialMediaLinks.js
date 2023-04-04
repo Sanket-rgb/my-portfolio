@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React from "react"
 
-import classes from "./SocialMediaLinks.module.css";
+import classes from "./SocialMediaLinks.module.css"
 const SocialMediaLinks = (props) => {
   return (
     <div className={classes.wrapper}>
@@ -78,7 +78,7 @@ const SocialMediaLinks = (props) => {
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default SocialMediaLinks;
+export default SocialMediaLinks
