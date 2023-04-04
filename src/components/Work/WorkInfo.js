@@ -18,12 +18,14 @@ const WorkInfo = (props) => {
     <div id={props.id} className={classes.wrapper}>
       <div className={classes["grid-container"]}>
         <div className={classes["heading-title"]}>
-          <h2>Professional Experience</h2>
+          <p>work experience</p>
+          <h3>Exploring Work Experience: Insights and Lessons Learned 💡</h3>
         </div>
         <Collab classes={classes} />
         <Frshr classes={classes} />
         <div className={classes["heading-title"]}>
-          <h2>Academic and Personal Projects</h2>
+          <p>projects</p>
+          <h3>Each project is a unique piece of development 🧩</h3>
         </div>
         <Project
           classes={classes}
@@ -31,7 +33,7 @@ const WorkInfo = (props) => {
           image={"/Images/Work/estclicksshop.jpeg"}
           name={"SHOP ESTCLICKS (2023)"}
           description={
-            "Designed and developed an e-commerce shop for selling digital photographs."
+            "Designed and developed an e-commerce website for showcasing digital photographs and giving an ability to add or remove items from the cart."
           }
           tools={tools[0]}
         />
