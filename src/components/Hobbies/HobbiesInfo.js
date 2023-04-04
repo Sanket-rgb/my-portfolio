@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 import { images } from "@/Utils/Photos"
 import classes from "./HobbiesInfo.module.css"
@@ -10,25 +10,19 @@ const HobbiesInfo = (props) => {
         <div className={classes.title}>
           <h2>Hobby (Photography)</h2>
 
-          {/* <a
-            className={classes.link}
-            target="_blank"
-            href="https://instagram.com/estclicks"
-            rel="noreferrer"
-          >
-            <i style={{ fontSize: "25px" }} class="fa-brands fa-instagram"></i>
-          </a> */}
+          <p className={classes["text"]}>
+            I started photography when I was in New York City for about 1.5
+            years. I have clicked each of the following picture using iPhone 13
+            Pro and editing using Lightroom mobile. Each photograph is unique
+            and thoughfully captioned. Explore more on{" "}
+            <span>
+              <a target="_blank" href="https://instagram.com/estclicks">
+                @estclicks
+              </a>
+            </span>
+          </p>
         </div>
 
-        <p className={classes["text"]}>
-          I started photography when I was in New York City for about 1.5 years.
-          I have clicked each of the following picture using iPhone 13 Pro and
-          editing using Lightroom mobile. Each photograph is unique and
-          thoughfully captioned. Explore more on{" "}
-          <span>
-            <a href="https://instagram.com/estclicks">@estclicks</a>
-          </span>
-        </p>
         {/* <div className={classes.banner}></div> */}
         <div className={classes.container}>
           {images.map((image, index) => (
