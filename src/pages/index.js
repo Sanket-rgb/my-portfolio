@@ -20,9 +20,13 @@ import Contact from "@/components/Footer/Contact"
 import Copyright from "@/components/Footer/Copyright"
 
 export default function Home() {
+  const [mobileNav, setMobileNav] = useState(false)
   const [selectedNav, setSelectedNav] = useState("ABOUT")
   const [menuList, setMenuList] = useState(false)
 
+  const mobileNavHandler = () => {
+    setMobileNav(!mobileNav)
+  }
   const navSelectorhandler = (selectedNav) => {
     setSelectedNav(selectedNav)
   }
@@ -46,16 +50,52 @@ export default function Home() {
           <Link href="#hobby">Hobby</Link>
           <Link href="#contact">Contact</Link>
         </div>
-        <div className={classes["mobile-menu"]}>
+        <div onClick={mobileNavHandler} className={classes["mobile-menu"]}>
           <i
             style={{ fontSize: "23px" }}
             className="fa-solid fa-bars-staggered"
           ></i>
         </div>
       </header>
+      <div
+        className={`${classes["mobile-nav"]} ${
+          classes[mobileNav ? "open-menu" : "closed-menu"]
+        }`}
+      >
+        <span>
+          <i onClick={mobileNavHandler} className="fa-solid fa-xmark"></i>
+        </span>
+        <ul>
+          <li>
+            <Link onClick={mobileNavHandler} href="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link onClick={mobileNavHandler} href="#about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link onClick={mobileNavHandler} href="#work">
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link onClick={mobileNavHandler} href="#hobby">
+              Hobby
+            </Link>
+          </li>
+          <li>
+            <Link onClick={mobileNavHandler} href="#contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
       <AboutInfo />
       <AboutMe id="about" />
-      <WorkInfo id="projects" />
+      <WorkInfo id="work" />
       <HobbiesInfo id="hobby" />
       <Contact id="contact" />
       <Copyright />
