@@ -46,7 +46,7 @@ export default function Home() {
         <div className={classes.links}>
           <Link href="/">Home</Link>
           <Link href="#about">About</Link>
-          <Link href="#projects">Work</Link>
+          <Link href="#work">Work</Link>
           <Link href="#hobby">Hobby</Link>
           <Link href="#contact">Contact</Link>
         </div>

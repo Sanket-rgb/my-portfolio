@@ -13,11 +13,19 @@
   align-items: flex-start;
 }
 
-.header h2 {
+.header a {
+  text-decoration: none;
+
+  color: black;
+
   font-weight: normal;
   font-size: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+}
+
+.header a:hover {
+  color: #2a7ae2;
 }
 
 .header h1 {

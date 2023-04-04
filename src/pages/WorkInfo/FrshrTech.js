@@ -1,10 +1,11 @@
+import Link from "next/link"
 import classes from "./WorkInfo.module.css"
 const FrshrTech = () => {
   return (
     <main className={classes["page-content"]}>
       <div className={classes["container"]}>
         <header className={classes["header"]}>
-          <h2>Sanket Koli</h2>
+          <Link href="/">Sanket Koli</Link>
           <h1>Frshr Technologies</h1>
           <p>(Jun 2020 - Aug 2021) • Software Developer • Full-time</p>
         </header>
