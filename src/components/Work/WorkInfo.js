@@ -18,7 +18,7 @@ const WorkInfo = (props) => {
       <div className={classes["grid-container"]}>
         <div className={classes["heading-title"]}>
           <p>work experience</p>
-          <h3>Exploring Work Experience: Insights and Lessons Learned 💡</h3>
+          <h3>Insights and Lessons Learned 💡</h3>
         </div>
         <Collab classes={classes} />
         <Frshr classes={classes} />
