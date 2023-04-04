@@ -11,7 +11,7 @@ const Contact = (props) => {
           <div className={classes["contact__icons"]}>
             <div className={classes["contact__icon-box"]}>
               <span>
-                <i class="fa-solid fa-map-location-dot"></i>
+                <i className="fa-solid fa-map-location-dot"></i>
               </span>
               <div className={classes["contact__info"]}>
                 <h3>Location</h3>
@@ -20,7 +20,7 @@ const Contact = (props) => {
             </div>
             <div className={classes["contact__icon-box"]}>
               <span>
-                <i class="fa-solid fa-envelope-open-text"></i>
+                <i className="fa-solid fa-envelope-open-text"></i>
               </span>
               <div className={classes["contact__info"]}>
                 <h3>Mail</h3>

@@ -49,7 +49,7 @@ export default function Home() {
         <div className={classes["mobile-menu"]}>
           <i
             style={{ fontSize: "23px" }}
-            class="fa-solid fa-bars-staggered"
+            className="fa-solid fa-bars-staggered"
           ></i>
         </div>
       </header>
