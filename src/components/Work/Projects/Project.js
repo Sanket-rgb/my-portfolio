@@ -22,26 +22,6 @@ const Project = (props) => {
         <div className={props.classes["card-description"]}>
           <div className={props.classes.title}>
             <h2>{props.name}</h2>
-            {/* <div className={props.classes["links-container"]}>
-              <a
-                className={props.classes.link}
-                target="_blank"
-                href="https://github.com/stefvndev/car-rental"
-                rel="noreferrer"
-              >
-                Code &nbsp;
-                <i style={{ fontSize: "25px" }} class="fa-brands fa-github"></i>
-              </a>
-              <a
-                className={props.classes.link}
-                target="_blank"
-                href="https://github.com/stefvndev/car-rental"
-                rel="noreferrer"
-              >
-                Live Demo &nbsp;
-                <i style={{ fontSize: "25px" }} class="fa-brands fa-github"></i>
-              </a>
-            </div> */}
           </div>
 
           <p>{props.description}</p>

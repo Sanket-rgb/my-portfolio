@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 import { images } from "@/Utils/Photos"
 import classes from "./HobbiesInfo.module.css"

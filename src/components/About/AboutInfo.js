@@ -13,8 +13,6 @@ import flutter from "../../../public/Images/logos/flutter.svg"
 import next from "../../../public/Images/logos/Next.svg"
 import scss from "../../../public/Images/logos/scss.svg"
 
-import style from "../Footer/SocialMediaLinks.module.css"
-import Link from "next/link"
 const AboutInfo = (props) => {
   return (
     <div className={classes.wrapper}>
