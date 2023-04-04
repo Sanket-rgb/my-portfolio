@@ -4,10 +4,25 @@
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8e8e8e;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 20px;
 }
