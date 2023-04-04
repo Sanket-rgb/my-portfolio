@@ -12,7 +12,7 @@ const Copyright = (props) => {
               rel="noreferrer"
               href="https://linkedin.com/in/sanketkoli007"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
             <a
               aria-label="github"
@@ -20,7 +20,7 @@ const Copyright = (props) => {
               rel="noreferrer"
               href="https://github.com/Sanket-rgb"
             >
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </div>
         </div>
