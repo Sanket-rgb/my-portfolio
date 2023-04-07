@@ -11,6 +11,7 @@ import AboutInfo from "@/components/About/AboutInfo"
 import AboutMe from "@/components/About/AboutMe"
 import Contact from "@/components/Footer/Contact"
 import Copyright from "@/components/Footer/Copyright"
+import ProjectInfo from "@/components/Work/ProjectInfo"
 
 export default function Home() {
   const [mobileNav, setMobileNav] = useState(false)
@@ -31,6 +32,7 @@ export default function Home() {
           <Link href="/">Home</Link>
           <Link href="#about">About</Link>
           <Link href="#work">Work</Link>
+          <Link href="#projects">Projects</Link>
           <Link href="#hobby">Hobby</Link>
           <Link href="#contact">Contact</Link>
         </div>
@@ -66,6 +68,11 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link onClick={mobileNavHandler} href="#projects">
+              Projects
+            </Link>
+          </li>
+          <li>
             <Link onClick={mobileNavHandler} href="#hobby">
               Hobby
             </Link>
@@ -80,6 +87,7 @@ export default function Home() {
       <AboutInfo />
       <AboutMe id="about" />
       <WorkInfo id="work" />
+      <ProjectInfo id="projects" />
       <HobbiesInfo id="hobby" />
       <Contact id="contact" />
       <Copyright />
