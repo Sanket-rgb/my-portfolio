@@ -23,8 +23,7 @@ const Collab = (props) => {
           <p>
             Upon joining Collab, I started contributing to their internal
             projects with a goal of enhancing user experience, implementing new
-            features and facilitating smooth deployment to production. As a
-            somewhat of a content creator myself...
+            features and...
           </p>
           {/* successfully deployed them to
           production NextJS, Vercel, PlanetScale, Heroku, GitHub Actions, Cypress etc.*/}
