@@ -20,7 +20,7 @@ const AboutInfo = (props) => {
         <div className={classes["about-me"]}>
           <div className={classes.description}>
             <h1>
-              Front-End Software Developer{" "}
+              <span>Front-End</span> Software Developer{" "}
               <span>
                 <Image
                   height={50}

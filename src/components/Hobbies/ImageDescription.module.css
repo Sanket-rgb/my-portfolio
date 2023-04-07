@@ -9,12 +9,13 @@
   text-align: center;
   color: white;
   cursor: pointer;
+
   padding: 1rem;
   box-sizing: border-box;
 }
 
 .imageDescriptionContainer p {
-  font-size: 17px;
+  font-size: 1vmax;
 }
 
 .dash-line {

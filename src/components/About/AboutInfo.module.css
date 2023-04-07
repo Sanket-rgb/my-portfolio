@@ -13,7 +13,8 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  max-width: 60rem;
+  padding: 0px 40px;
+  max-width: 62rem;
 }
 
 .about-me {
@@ -38,6 +39,13 @@
   line-height: 1.2;
 
   margin: 20px 0px;
+}
+
+.description span {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1480fbf7;
 }
 
 .description > p {
@@ -154,12 +162,13 @@
     flex-direction: column;
     text-align: center;
     margin: 0rem;
+
+    padding: 0px 17px;
   }
   .about-me {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
-    padding: 0rem 1rem;
     height: auto;
   }
 
@@ -176,6 +185,10 @@
   }
 
   .description h1 {
+    font-size: 45px;
+    margin-top: 3rem;
+  }
+  .description span {
     font-size: 45px;
     margin-top: 3rem;
   }

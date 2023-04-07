@@ -5,6 +5,7 @@ const ImageDescription = (props) => {
   return (
     <div
       className={classes.imageDescriptionContainer}
+      // onTouchStart={props.onMouseOut}
       onMouseOver={props.onMouseOver}
       onMouseOut={props.onMouseOut}
     >
