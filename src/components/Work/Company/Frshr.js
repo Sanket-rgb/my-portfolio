@@ -18,7 +18,10 @@ const Frshr = (props) => {
           />
         </div>
         <div className={props.classes["card-description"]}>
-          <h2>Software Developer at Frshr Technologies (Jun 2020- Aug 2021)</h2>
+          <h2>
+            Software Developer at Frshr Technologies <br />
+            <span>(Jun 2020- Aug 2021)</span>
+          </h2>
 
           {/* <p>
             During my tenure with Frshr Technologies, my responsibilities have

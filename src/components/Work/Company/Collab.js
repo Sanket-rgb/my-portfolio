@@ -18,7 +18,10 @@ const Collab = (props) => {
           />
         </div>
         <div className={props.classes["card-description"]}>
-          <h2>Engineering Intern at Collab Inc (May 2022 - Aug 2022)</h2>
+          <h2>
+            Engineering Intern at Collab Inc <br />
+            <span>(May 2022 - Aug 2022)</span>
+          </h2>
 
           <p>
             Upon joining Collab, I started contributing to their internal
@@ -30,11 +33,11 @@ const Collab = (props) => {
           <div className={props.classes.skills}>
             <div className={props.classes["skill-name"]}>Next.js</div>
             <div className={props.classes["skill-name"]}>TypeScript</div>
-            <div className={props.classes["skill-name"]}>PlanetScale</div>
-            <div className={props.classes["skill-name"]}>Cypress</div>
             <div className={props.classes["skill-name"]}>Git</div>
-            <div className={props.classes["skill-name"]}>CI/CD</div>
+            <div className={props.classes["skill-name"]}>PlanetScale</div>
             <div className={props.classes["skill-name"]}>GitHub Actions</div>
+            <div className={props.classes["skill-name"]}>Cypress</div>
+            <div className={props.classes["skill-name"]}>CI/CD</div>
             <div className={props.classes["skill-name"]}>Fork</div>
             <div className={props.classes["skill-name"]}>Web Development</div>
           </div>

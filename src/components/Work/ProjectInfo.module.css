@@ -1,12 +1,12 @@
 .project {
   background-color: #f9f9f9;
-  padding: 75px 0;
+  padding: 100px 0px;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 67rem;
-  padding: 0 2rem;
+  max-width: 62rem;
+  padding: 0 40px;
 }
 
 .project-content {
@@ -26,14 +26,14 @@
 
 .project-content > h3 {
   color: #2d2e32;
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: 700;
 
   margin: 0;
   margin-bottom: 50px;
 }
 
 .projects-grid {
-  grid-gap: 50px;
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr;
