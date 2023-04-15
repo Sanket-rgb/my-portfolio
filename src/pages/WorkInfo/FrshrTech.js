@@ -20,6 +20,17 @@ const FrshrTech = () => {
             application development team and also assisted in hiring and
             training new recruits for the front-end development team.
           </p>
+          <h2>Skills Acquired</h2>
+          <div className={classes.skills}>
+            <div className={classes["skill-name"]}>Flutter</div>
+            <div className={classes["skill-name"]}>Node</div>
+            <div className={classes["skill-name"]}>GitHub</div>
+            <div className={classes["skill-name"]}>Xcode</div>
+            <div className={classes["skill-name"]}>TestFlight</div>
+            <div className={classes["skill-name"]}>Figma</div>
+            <div className={classes["skill-name"]}>GitKraken</div>
+            <div className={classes["skill-name"]}>Mobile App Development</div>
+          </div>
           <h2 id="highlights">Highlights</h2>
           <ul>
             <li>

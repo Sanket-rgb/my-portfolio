@@ -8,7 +8,9 @@ const HobbiesInfo = (props) => {
     <div id={props.id} className={classes["main-wrapper"]}>
       <div className={classes.wrapper}>
         <div className={classes.title}>
-          <h2>Hobby (Photography)</h2>
+          <h2>
+            <span>Hobby</span> (Photography)
+          </h2>
 
           <p className={classes["text"]}>
             I started photography when I was in New York City for about 1.5

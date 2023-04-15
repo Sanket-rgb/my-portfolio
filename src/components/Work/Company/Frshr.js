@@ -37,14 +37,9 @@ const Frshr = (props) => {
           <div className={props.classes.skills}>
             <div className={props.classes["skill-name"]}>Flutter</div>
             <div className={props.classes["skill-name"]}>Node</div>
-            <div className={props.classes["skill-name"]}>GitHub</div>
             <div className={props.classes["skill-name"]}>Xcode</div>
-            <div className={props.classes["skill-name"]}>TestFlight</div>
-            <div className={props.classes["skill-name"]}>Figma</div>
-            <div className={props.classes["skill-name"]}>GitKraken</div>
-            <div className={props.classes["skill-name"]}>
-              Mobile App Development
-            </div>
+            <div className={props.classes["skill-name"]}>RESTful</div>
+            <div className={props.classes["skill-name"]}>See More...</div>
           </div>
         </div>
       </Link>

@@ -3,7 +3,7 @@ import Project from "./Projects/Project"
 import classes from "./ProjectInfo.module.css"
 const ProjectInfo = (props) => {
   const tools = [
-    ["CSS Modules", "localStorage", "Vercel"],
+    ["CSS Modules", "localStorage", "Supabase"],
     ["Next.js", "CSS Modules", "JavaScript"],
     ["SCSS", "TypeScript", "Vite", "Supabase"],
     ["Human Computer Interaction", "Figma", "Slack"],

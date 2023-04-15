@@ -7,9 +7,9 @@ import classes from "./Project.module.css"
 const Project = (props) => {
   return (
     <div className={`${classes["container"]} ${classes[props.flexdirection]}`}>
-      <div className={classes["pro__img"]}>
+      <Link href={props.demo} target="_blank" className={classes["pro__img"]}>
         <Image src={props.image} fill alt="project-img"></Image>
-      </div>
+      </Link>
       <div className={classes["pro__text"]}>
         <h3>{props.name}</h3>
         <p>{props.description}</p>
