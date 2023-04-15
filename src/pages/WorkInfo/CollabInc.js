@@ -17,6 +17,18 @@ const CollabInc = () => {
             somewhat of a content creator myself, it{"'"}s been really exciting
             to have worked so closely to the creator economy.
           </p>
+          <h2>Skills Acquired</h2>
+          <div className={classes.skills}>
+            <div className={classes["skill-name"]}>Next.js</div>
+            <div className={classes["skill-name"]}>TypeScript</div>
+            <div className={classes["skill-name"]}>Git</div>
+            <div className={classes["skill-name"]}>PlanetScale</div>
+            <div className={classes["skill-name"]}>GitHub Actions</div>
+            <div className={classes["skill-name"]}>Cypress</div>
+            <div className={classes["skill-name"]}>CI/CD</div>
+            <div className={classes["skill-name"]}>Fork</div>
+            <div className={classes["skill-name"]}>Web Development</div>
+          </div>
           <h2 id="highlights">Highlights</h2>
           <ul>
             <li>

@@ -72,3 +72,30 @@
   color: #111;
   text-decoration: underline;
 }
+
+.skills {
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  padding: 0.7rem 1rem;
+
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  background-color: rgba(0, 0, 0, 0.035);
+  border-color: #f8f9fa;
+  border-radius: 0.25rem;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.skill-name:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.166);
+}

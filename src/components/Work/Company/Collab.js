@@ -33,13 +33,9 @@ const Collab = (props) => {
           <div className={props.classes.skills}>
             <div className={props.classes["skill-name"]}>Next.js</div>
             <div className={props.classes["skill-name"]}>TypeScript</div>
-            <div className={props.classes["skill-name"]}>Git</div>
-            <div className={props.classes["skill-name"]}>PlanetScale</div>
-            <div className={props.classes["skill-name"]}>GitHub Actions</div>
-            <div className={props.classes["skill-name"]}>Cypress</div>
             <div className={props.classes["skill-name"]}>CI/CD</div>
-            <div className={props.classes["skill-name"]}>Fork</div>
-            <div className={props.classes["skill-name"]}>Web Development</div>
+            <div className={props.classes["skill-name"]}>PlanetScale</div>
+            <div className={props.classes["skill-name"]}>See More...</div>
           </div>
         </div>
       </Link>
