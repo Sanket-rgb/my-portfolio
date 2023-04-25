@@ -27,7 +27,7 @@ const Project = (props) => {
 
           <a target="_blank" href={props.demo} rel="noreferrer">
             Live Demo
-            <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+            <i className="fa-solid fa-arrow-up-right-from-square link-icon"></i>
           </a>
         </div>
       </div>

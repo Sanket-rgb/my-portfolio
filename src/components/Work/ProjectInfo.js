@@ -3,7 +3,7 @@ import Project from "./Projects/Project"
 import classes from "./ProjectInfo.module.css"
 const ProjectInfo = (props) => {
   const tools = [
-    ["CSS Modules", "localStorage", "Supabase"],
+    ["LocalStorage", "Supabase", "SCSS", "Stripe"],
     ["Next.js", "CSS Modules", "JavaScript"],
     ["SCSS", "TypeScript", "Vite", "Supabase"],
     ["Human Computer Interaction", "Figma", "Slack"],
@@ -23,7 +23,7 @@ const ProjectInfo = (props) => {
               image={"/Images/Work/estclicksshop.jpeg"}
               name={"SHOP ESTCLICKS 📷"}
               description={
-                "Designed and developed an e-commerce website for showcasing digital photographs and giving an ability to add or remove items from the cart."
+                "Designed and developed an e-commerce website allowing users to purchase digital photographs."
               }
               tools={tools[0]}
             />
