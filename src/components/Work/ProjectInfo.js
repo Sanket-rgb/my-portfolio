@@ -3,7 +3,8 @@ import Project from "./Projects/Project"
 import classes from "./ProjectInfo.module.css"
 const ProjectInfo = (props) => {
   const tools = [
-    ["CSS Modules", "localStorage", "Supabase"],
+    ["Material UI", "React Context", "Spotify API"],
+    ["LocalStorage", "Supabase", "SCSS", "Stripe"],
     ["Next.js", "CSS Modules", "JavaScript"],
     ["SCSS", "TypeScript", "Vite", "Supabase"],
     ["Human Computer Interaction", "Figma", "Slack"],
@@ -17,15 +18,26 @@ const ProjectInfo = (props) => {
           <h3>Each project is a unique piece of development 🧩</h3>
           <div className={classes["projects-grid"]}>
             <Project
+              flexdirection="row-reverse"
+              demo={"https://sk-spotify-clone.netlify.app"}
+              github={"https://github.com/Sanket-rgb/spotify-clone"}
+              image={"/Images/Work/spotify.jpeg"}
+              name={"SPOTIFY CLONE 🎧"}
+              description={
+                "Created a spotify clone allowing user to fetch spotify account information."
+              }
+              tools={tools[0]}
+            />
+            <Project
               flexdirection="row"
               demo={"https://shop-estclicks.netlify.app/"}
               github={"https://github.com/Sanket-rgb/shop-estclicks"}
               image={"/Images/Work/estclicksshop.jpeg"}
               name={"SHOP ESTCLICKS 📷"}
               description={
-                "Designed and developed an e-commerce website for showcasing digital photographs and giving an ability to add or remove items from the cart."
+                "Designed and developed an e-commerce website allowing users to purchase digital photographs."
               }
-              tools={tools[0]}
+              tools={tools[1]}
             />
             <Project
               flexdirection="row-reverse"
@@ -36,7 +48,7 @@ const ProjectInfo = (props) => {
               description={
                 "Developed an intuitive car rental application that highlights an extensive selection of cars, along with their pickup points and rental dates, empowering users to make informed decisions."
               }
-              tools={tools[1]}
+              tools={tools[2]}
             />
             <Project
               flexdirection="row"
@@ -49,7 +61,7 @@ const ProjectInfo = (props) => {
               description={
                 "Collaborating with SAAB organisation and Aalto Design Factory, Finland to create a user interface for drone detection system."
               }
-              tools={tools[2]}
+              tools={tools[3]}
             />
             <Project
               flexdirection="row-reverse"
@@ -62,7 +74,7 @@ const ProjectInfo = (props) => {
               description={
                 "Transformed a low-fidelity design into a high-fidelity design to develop a language learning application prototype for toddlers and conducted usability testing."
               }
-              tools={tools[3]}
+              tools={tools[4]}
             />
           </div>
         </div>
