@@ -31,8 +31,8 @@ const AboutInfo = (props) => {
               </span>
             </h1>
             <p>
-              Hi, I{"'"}m Sanket Koli. A passionate Front-end developer based in
-              Edmonds, WA. 📍
+              Hi, I{"'"}m Sanket Koli. A passionate Front-End Software developer
+              based in 📍Edmonds, WA.
             </p>
             <div className={classes["social-media-container"]}>
               <a href="https://linkedin.com/in/sanketkoli007" target="_blank">

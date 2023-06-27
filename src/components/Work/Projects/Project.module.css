@@ -3,7 +3,7 @@
   /* justify-content: space-between; */
   padding: 20px;
   gap: 90px;
-
+  align-items: center;
   background-color: #fff;
   border-radius: 17px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -15,22 +15,26 @@
 
 .pro__img {
   position: relative;
-
   background-color: hsla(0, 0%, 46%, 0.2);
-  border-radius: 17px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: auto;
   overflow: hidden;
   width: 52%;
+  aspect-ratio: 16/9;
+  transition: all 0.2s ease-in-out;
+}
+
+.pro__img:hover {
+  transform: scale(1.01);
 }
 
 .pro__text {
   display: flex;
-
   flex-direction: column;
-  height: auto;
   justify-content: center;
   text-align: center;
+
+  height: auto;
   max-width: 300px;
 }
 
